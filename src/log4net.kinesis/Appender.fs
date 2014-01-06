@@ -55,8 +55,7 @@ type KinesisAppender () as this =
                                                    Data         = stream)
                     do! kinesis.PutRecordAsync(req) |> Async.AwaitTask |> Async.Ignore
             })
-        agent.Error.Add(fun exn -> 
-            Console.WriteLine(exn)) // swallow exceptions so to stop agents from be coming useless after exception..
+        agent.Error.Add(fun _ -> ()) // swallow exceptions so to stop agents from be coming useless after exception..
 
         agent
     

@@ -21,6 +21,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{AA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Kinesis.ExampleCs", "..\..\examples\log4net.Kinesis.ExampleCs\log4net.Kinesis.ExampleCs.csproj", "{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "log4net.Kinesis.ExampleFs", "..\..\examples\log4net.Kinesis.ExampleFs\log4net.Kinesis.ExampleFs.fsproj", "{31F65707-40BC-4FFB-ACBC-19A9F974426E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,11 +37,16 @@ Global
 		{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31F65707-40BC-4FFB-ACBC-19A9F974426E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F65707-40BC-4FFB-ACBC-19A9F974426E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F65707-40BC-4FFB-ACBC-19A9F974426E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F65707-40BC-4FFB-ACBC-19A9F974426E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0} = {AABD00BA-9249-4014-A699-CE52C3E0651E}
+		{31F65707-40BC-4FFB-ACBC-19A9F974426E} = {AABD00BA-9249-4014-A699-CE52C3E0651E}
 	EndGlobalSection
 EndGlobal
