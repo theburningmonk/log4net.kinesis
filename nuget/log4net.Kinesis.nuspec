@@ -7,7 +7,7 @@
     <owners>@authors@</owners>
     <licenseUrl>https://github.com/theburningmonk/log4net.kinesis/blob/develop/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/theburningmonk/log4net.kinesis/</projectUrl>
-    <iconUrl></iconUrl>
+    <iconUrl>https://raw.github.com/theburningmonk/log4net.kinesis/develop/nuget/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <summary>@summary@</summary>
     <description>This library provides a log4net custom appender for logging into an Amazon Kinesis stream.</description>

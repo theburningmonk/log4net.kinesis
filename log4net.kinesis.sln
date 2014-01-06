@@ -10,18 +10,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A5C80A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "project", "project", "{D65F2108-7438-4ACC-8013-B80B1885A668}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\build.fsx = ..\..\build.fsx
-		..\..\nuget\log4net.Kinesis.nuspec = ..\..\nuget\log4net.Kinesis.nuspec
-		..\..\README.md = ..\..\README.md
+		build.fsx = build.fsx
+		nuget\log4net.Kinesis.nuspec = nuget\log4net.Kinesis.nuspec
+		README.md = README.md
 	EndProjectSection
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "log4net.Kinesis", "log4net.Kinesis.fsproj", "{DB6D098A-3436-4D68-949D-3706B99AB2BB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{AABD00BA-9249-4014-A699-CE52C3E0651E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Kinesis.ExampleCs", "..\..\examples\log4net.Kinesis.ExampleCs\log4net.Kinesis.ExampleCs.csproj", "{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "log4net.Kinesis", "src\log4net.kinesis\log4net.Kinesis.fsproj", "{DB6D098A-3436-4D68-949D-3706B99AB2BB}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "log4net.Kinesis.ExampleFs", "..\..\examples\log4net.Kinesis.ExampleFs\log4net.Kinesis.ExampleFs.fsproj", "{31F65707-40BC-4FFB-ACBC-19A9F974426E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "log4net.Kinesis.ExampleCs", "examples\log4net.Kinesis.ExampleCs\log4net.Kinesis.ExampleCs.csproj", "{2DF9F181-5A93-4ED5-8ED9-DBE3CA1B85C0}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "log4net.Kinesis.ExampleFs", "examples\log4net.Kinesis.ExampleFs\log4net.Kinesis.ExampleFs.fsproj", "{31F65707-40BC-4FFB-ACBC-19A9F974426E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
