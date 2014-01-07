@@ -38,7 +38,7 @@ let description = """
 // List of author names (for NuGet package)
 let authors = [ "Yan Cui" ]
 // Tags for your project (for NuGet package)
-let tags = "c# csharp aws amazon kinesis bigdata"
+let tags = "f# fsharp aws amazon kinesis bigdata log4net logging"
 
 // File system information 
 // (<solutionFile>.sln is built during the building process)
