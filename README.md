@@ -75,6 +75,3 @@ Please report any issues in the **[issues](https://github.com/theburningmonk/log
 
 
 To help you process the records in your Kinesis stream more easily, check out my other project **[ReactoKinesiX](https://github.com/theburningmonk/reactokinesix)**, a Rx-based .Net client library for building a record-consuming client application on top of `Amazon Kinesis`.
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/theburningmonk/log4net.kinesis/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
