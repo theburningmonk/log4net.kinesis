@@ -9,9 +9,10 @@ open Fake.AssemblyInfoFile
 open Fake.ReleaseNotesHelper
 open System
 
-let buildDir = "build/"
-let testDir  = "test/"
-let tempDir  = "temp/"
+let buildDir   = "build/"
+let build40Dir = "build40/"
+let testDir    = "test/"
+let tempDir    = "temp/"
 
 // --------------------------------------------------------------------------------------
 // START TODO: Provide project-specific details below
@@ -38,11 +39,13 @@ let description = """
 // List of author names (for NuGet package)
 let authors = [ "Yan Cui" ]
 // Tags for your project (for NuGet package)
-let tags = "c# csharp aws amazon kinesis bigdata"
+let tags = "f# fsharp aws amazon kinesis bigdata log4net logging"
 
 // File system information 
 // (<solutionFile>.sln is built during the building process)
-let projectFile  = "log4net.kinesis.fsproj"
+let projectFile    = "log4net.kinesis.fsproj"
+let project40File  = "log4net.kinesis40.fsproj"
+
 // Pattern specifying assemblies to be tested using NUnit
 let testAssemblies = ["tests/*/bin/*/log4net.kinesis*Tests*.dll"]
 
@@ -62,8 +65,16 @@ let release = parseReleaseNotes (IO.File.ReadAllLines "RELEASE_NOTES.md")
 
 // Generate assembly info files with the right version & up-to-date information
 Target "AssemblyInfo" (fun _ ->
-  let fileName = "src/" + project + "/AssemblyInfo.fs"
+  let fileName = "src/log4net.Kinesis/AssemblyInfo.fs"
   CreateFSharpAssemblyInfo fileName
+      [ Attribute.Title         project
+        Attribute.Product       project
+        Attribute.Description   summary
+        Attribute.Version       release.AssemblyVersion
+        Attribute.FileVersion   release.AssemblyVersion ] 
+
+  let fileName40 = "src/log4net.Kinesis40/AssemblyInfo.fs"
+  CreateFSharpAssemblyInfo fileName40
       [ Attribute.Title         project
         Attribute.Product       project
         Attribute.Description   summary
@@ -77,7 +88,7 @@ Target "AssemblyInfo" (fun _ ->
 Target "RestorePackages" RestorePackages
 
 Target "Clean" (fun _ ->
-    CleanDirs [ buildDir; testDir; tempDir ]
+    CleanDirs [ buildDir; build40Dir; testDir; tempDir ]
 )
 
 Target "CleanDocs" (fun _ ->
@@ -95,6 +106,10 @@ let files includes =
 Target "Build" (fun _ ->
     files [ "src/log4net.kinesis/" + projectFile ]
     |> MSBuildRelease buildDir "Rebuild"
+    |> ignore
+
+    files [ "src/log4net.kinesis40/" + project40File ]
+    |> MSBuildRelease build40Dir "Rebuild"
     |> ignore
 )
 
