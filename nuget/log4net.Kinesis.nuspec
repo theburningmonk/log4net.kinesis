@@ -20,5 +20,8 @@
     <file src="..\build\log4net.kinesis.dll" target="lib/net45" />
     <file src="..\build\log4net.kinesis.pdb" target="lib/net45" />
     <file src="..\build\log4net.kinesis.xml" target="lib/net45" />
+    <file src="..\build40\log4net.kinesis.dll" target="lib/net40" />
+    <file src="..\build40\log4net.kinesis.pdb" target="lib/net40" />
+    <file src="..\build40\log4net.kinesis.xml" target="lib/net40" />
   </files>
 </package>
